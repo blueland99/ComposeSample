@@ -76,6 +76,9 @@ dependencies {
     // Retrofit 의존성
     implementation(libs.retrofit)
     implementation(libs.gson.converter)
+
+    // UI
+    implementation(libs.accompanist.systemuicontroller)
 }
 
 kapt {
