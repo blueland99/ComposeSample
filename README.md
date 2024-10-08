@@ -1,7 +1,5 @@
 # AndroidComposeSample
 
----
-
 ## Gitmoji 커밋 메시지 규칙
 
 이 프로젝트에서는 Gitmoji를 사용하여 커밋 메시지를 시각적으로 쉽게 이해할 수 있도록 합니다. 다음은 자주 사용하는 Gitmoji와 의미입니다:
@@ -30,6 +28,7 @@
 
 ## 프로젝트 구조
 
+```
 com.example.app
 ├── ui
 │   ├── theme
@@ -50,6 +49,7 @@ com.example.app
 │   └── AppModule.kt
 ├── MainActivity.kt
 └── MyApp.kt
+```
 
 1. ui
     - theme: 앱의 전역 스타일을 정의합니다.
