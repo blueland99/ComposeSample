@@ -10,6 +10,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.blueland.android_compose_sample.R
+import com.blueland.android_compose_sample.ui.theme.LocalColors
 import com.blueland.android_compose_sample.ui.theme.LocalShapes
 import com.blueland.android_compose_sample.ui.theme.LocalTextStyles
 import com.blueland.android_compose_sample.viewmodel.MainViewModel
@@ -18,10 +19,12 @@ import kr.co.buddypay.mpay.ui.component.BottomButton
 @Composable
 fun MainScreen(viewModel: MainViewModel = hiltViewModel()) {
     Scaffold(
-        Modifier.padding(20.dp)
+        containerColor = LocalColors.current.background
     ) { paddingValues ->
         Column(
-            Modifier.padding(paddingValues),
+            Modifier
+                .padding(paddingValues)
+                .padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             BottomButton(
